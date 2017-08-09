@@ -16,6 +16,9 @@ yum install readline readline-devel
 
 pythonbrew install 2.7.4
 
+#switch 用于永久生效 , use 用于临时生效（重入失效）
+pythonbrew switch 2.7.4
+
 echo "install pip"
 curl https://bootstrap.pypa.io/get-pip.py -s | python
 
