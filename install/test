@@ -1,0 +1,52 @@
+python在交互模式下，输入命令的时候按tab键就按时间tab键的功能输出，在书写python时多有不便。
+把下面的代码写入一个文件tab.py，放到/usr/lib/python2.6/site-packages/下
+
+
+#!/usr/bin/env python
+import sys
+import readline
+import rlcompleter
+import atexit
+import os
+readline.parse_and_bind('tab:complete')
+histfile = os.path.join(os.environ['HOME'],'.pythonhistory')
+try:
+        readline.read_history_file(histfile)
+except IOError:
+        pass
+        atexit.register(readline.write_history_file,histfile)
+使用方法：
+python进入交互模式：
+
+>>> import tab
+>>> import sys
+>>> sys.
+sys.__class__(              sys.api_version             sys.hexversion
+sys.__delattr__(            sys.argv                    sys.last_type(
+sys.__dict__                sys.builtin_module_names    sys.last_value
+sys.__displayhook__(        sys.byteorder               sys.maxint
+sys.__doc__                 sys.call_tracing(           sys.maxsize
+sys.__egginsert             sys.callstats(              sys.maxunicode
+sys.__excepthook__(         sys.copyright               sys.meta_path
+sys.__format__(             sys.displayhook(            sys.modules
+sys.__getattribute__(       sys.dont_write_bytecode     sys.path
+sys.__hash__(               sys.exc_clear(              sys.path_hooks
+sys.__init__(               sys.exc_info(               sys.path_importer_cache
+sys.__name__                sys.exc_type                sys.platform
+sys.__new__(                sys.excepthook(             sys.prefix
+sys.__package__             sys.exec_prefix             sys.ps1
+sys.__plen                  sys.executable              sys.ps2
+sys.__reduce__(             sys.exit(                   sys.py3kwarning
+sys.__reduce_ex__(          sys.exitfunc(               sys.setcheckinterval(
+sys.__repr__(               sys.flags                   sys.setdlopenflags(
+sys.__setattr__(            sys.float_info              sys.setprofile(
+sys.__sizeof__(             sys.getcheckinterval(       sys.setrecursionlimit(
+sys.__stderr__              sys.getdefaultencoding(     sys.settrace(
+sys.__stdin__               sys.getdlopenflags(         sys.stderr
+sys.__stdout__              sys.getfilesystemencoding(  sys.stdin
+sys.__str__(                sys.getprofile(             sys.stdout
+sys.__subclasshook__(       sys.getrecursionlimit(      sys.subversion
+sys._clear_type_cache(      sys.getrefcount(            sys.version
+sys._current_frames(        sys.getsizeof(              sys.version_info
+sys._getframe(              sys.gettrace(               sys.warnoptions
+>>> sys.

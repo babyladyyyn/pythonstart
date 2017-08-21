@@ -4,7 +4,8 @@
 #install pythonbrew
 #from https://pypi.python.org/pypi/pythonbrew/
 echo "install pythonbrew"
-curl -kLO http://xrl.us/pythonbrewinstall | bash
+#该curl地址已经失效，可以使用pythonbrew-1.3.6来安装
+#curl -kL http://xrl.us/pythonbrewinstall | bash
 
 
 
@@ -26,7 +27,9 @@ pip install sqlmap -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.
 pip install numpy -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
 pip install scipy -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
 pip install scikit-learn -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
-pip install matplotlib -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
+pip install matplotlib==1.4.3 -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
 pip install panda -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
+
+
 
 
