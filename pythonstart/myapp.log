@@ -1,0 +1,3 @@
+Sun, 17 Sep 2017 21:28:10 tlogging.py[line:19] DEBUG This is debug message
+Sun, 17 Sep 2017 21:28:10 tlogging.py[line:20] INFO This is info message
+Sun, 17 Sep 2017 21:28:10 tlogging.py[line:21] WARNING This is warning message

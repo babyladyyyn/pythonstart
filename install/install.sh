@@ -30,6 +30,8 @@ pip install scikit-learn -i http://pypi.douban.com/simple/ --trusted-host pypi.d
 pip install matplotlib==1.4.3 -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
 pip install panda -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
 
+pip install ipython -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
+
 
 
 
